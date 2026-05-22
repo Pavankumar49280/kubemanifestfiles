@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zomato-pod
+  labels:
+    app: zomato
+spec:
+  containers:
+    - name: mycont1
+      image: nginx
+      ports:
+        - containerPort: 80
+
